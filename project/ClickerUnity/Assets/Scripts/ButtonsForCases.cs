@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class ButtonsForCases : MonoBehaviour {
@@ -64,6 +65,7 @@ public class ButtonsForCases : MonoBehaviour {
                 ShowMeNameOfCase.text = "I'm Third Case";
                 break;
         }
+
         
     }
     public void SwitchCase()
@@ -93,4 +95,3 @@ public class ButtonsForCases : MonoBehaviour {
     }
 }
     
-
