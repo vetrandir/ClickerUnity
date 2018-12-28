@@ -34,8 +34,6 @@ public class ButtonsForCases : MonoBehaviour {
             stage = 1;
         }
         SwitchCase();
-        
-
         stage++;
         
         /*Debug.Log("случайные числа в диапазоне [" + min + "," + max + "]");
