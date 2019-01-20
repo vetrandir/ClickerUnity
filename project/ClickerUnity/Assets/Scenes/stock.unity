@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030513445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 975c59478f9b6dc47aece48fddb62166, type: 3}
+  m_Script: {fileID: 11500000, guid: 942f4dcd8ea15794ebb084151274da31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1234719967
@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 1306485961}
   - component: {fileID: 1306485960}
   - component: {fileID: 1306485959}
+  - component: {fileID: 1306485962}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -322,7 +323,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030513447}
+      - m_Target: {fileID: 1306485962}
         m_MethodName: PlayPressed1
         m_Mode: 1
         m_Arguments:
@@ -372,6 +373,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306485957}
   m_CullTransparentMesh: 0
+--- !u!114 &1306485962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306485957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942f4dcd8ea15794ebb084151274da31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1465793937
 GameObject:
   m_ObjectHideFlags: 0
