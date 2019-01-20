@@ -31,7 +31,7 @@ public class MenuControls : MonoBehaviour
     }
     public void PlayPressedcase()
     {
-        SceneManager.LoadScene("case");
+        SceneManager.LoadScene("case1");
     }
     public void PlayPressedsettings()
     {
