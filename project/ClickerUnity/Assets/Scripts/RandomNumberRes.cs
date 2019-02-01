@@ -51,11 +51,6 @@ public class RandomNumberRes : MonoBehaviour
                     Debug.Log("cauchuk: "+cauchukN);
                     break;
             }
-            
-            
-            
-            
-            
         }
     }
 }
