@@ -245,7 +245,9 @@ MonoBehaviour:
   - EnergyCrystals
   - Copper
   - Kauchuk
-  img: {fileID: 0}
+  Img: {fileID: 0}
+  TxtResourceName: {fileID: 0}
+  TxtResourceAmount: {fileID: 0}
 --- !u!1 &951196859
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +445,9 @@ MonoBehaviour:
   - EnergyCrystals
   - Copper
   - Kauchuk
-  img: {fileID: 0}
+  Img: {fileID: 0}
+  TxtResourceName: {fileID: 0}
+  TxtResourceAmount: {fileID: 0}
 --- !u!1 &1136036206
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +546,9 @@ MonoBehaviour:
   - EnergyCrystals
   - Copper
   - Kauchuk
-  img: {fileID: 0}
+  Img: {fileID: 0}
+  TxtResourceName: {fileID: 0}
+  TxtResourceAmount: {fileID: 0}
 --- !u!1 &1357253632
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +761,7 @@ GameObject:
   - component: {fileID: 1927178792}
   - component: {fileID: 1927178794}
   - component: {fileID: 1927178793}
+  - component: {fileID: 1927178795}
   m_Layer: 5
   m_Name: ResourcePic
   m_TagString: Untagged
@@ -818,3 +825,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927178791}
   m_CullTransparentMesh: 0
+--- !u!114 &1927178795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927178791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05048f2e651b7254b85ab79e403dfd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ResNames:
+  - Quarz
+  - Iron
+  - EnergyCrystals
+  - Copper
+  - Cauchuk
