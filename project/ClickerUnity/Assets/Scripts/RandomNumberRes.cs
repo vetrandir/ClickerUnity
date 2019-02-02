@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class RandomNumberRes : MonoBehaviour
 {
-    int copperN;
-    int enCrN;
-    int quarzN;
-    int cauchukN;
-    int ironN;
+    static int copperN;
+    static int enCrN;
+    static int quarzN;
+    static int cauchukN;
+    static int ironN;
     public string[] ResNames = new string[] { "Quarz", "Iron", "EnergyCrystals", "Copper", "Cauchuk" };
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        RandomNumberRes rnr = new RandomNumberRes();
-        rnr.count();
+        
+        
     }
 
     // Update is called once per frame
@@ -24,10 +25,11 @@ public class RandomNumberRes : MonoBehaviour
         
     }
     void OnMouseUpAsButton() {
-        
+        RandomNumberRes rnd = new RandomNumberRes();
+        rnd.count();
     }
     public void count() {
-        for (int x = 0; x < ResNames.Length; x++) {
+        //for (int x = 0; x < ResNames.Length; x++) {
             int rndNr = Random.Range(1, 5);
             switch (ResNames[rndNr]) {
                 case "Quarz":
@@ -51,6 +53,6 @@ public class RandomNumberRes : MonoBehaviour
                     Debug.Log("cauchuk: "+cauchukN);
                     break;
             }
-        }
+        //}
     }
 }
