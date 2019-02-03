@@ -30,7 +30,7 @@ public class RandomNumberRes : MonoBehaviour
     }
     public void count() {
         //for (int x = 0; x < ResNames.Length; x++) {
-            int rndNr = Random.Range(1, 5);
+            int rndNr = Random.Range(0, 4);
             switch (ResNames[rndNr]) {
                 case "Quarz":
                     quarzN++;
