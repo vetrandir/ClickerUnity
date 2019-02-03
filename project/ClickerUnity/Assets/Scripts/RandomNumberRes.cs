@@ -35,23 +35,28 @@ public class RandomNumberRes : MonoBehaviour
                 case "Quarz":
                     quarzN++;
                     Debug.Log("quarz: "+quarzN);
+                PlayerPrefs.SetInt("quarz", quarzN);
                     break;
                 case "Iron":
                     ironN++;
                     Debug.Log("iron: "+ironN);
-                    break;
+                PlayerPrefs.SetInt("iron", ironN);
+                break;
                 case "EnergyCrystals":
                     enCrN++;
                     Debug.Log("enCr: "+enCrN);
-                    break;
+                PlayerPrefs.SetInt("enCrn", enCrN);
+                break;
                 case "Copper":
                     copperN++;
                     Debug.Log("copper: "+copperN);
-                    break;
+                PlayerPrefs.SetInt("copper", copperN);
+                break;
                 case "Cauchuk":
                     cauchukN++;
                     Debug.Log("cauchuk: "+cauchukN);
-                    break;
+                PlayerPrefs.SetInt("cauchuk", cauchukN);
+                break;
             }
         //}
     }
