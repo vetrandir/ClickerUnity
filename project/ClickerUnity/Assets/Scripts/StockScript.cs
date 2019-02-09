@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class StockScript : MonoBehaviour
 {
-    public string[] ResPicsNames = new string[] { "Iron", "Copper", "Quarz", "Graok", "Grafen", "VtoipBar", "CopperWires", "IronPlate", "Unknown"/*"SiliconBased"*/,
+    public string[] ResPicsNames = new string[] { "Iron", "Copper", "Quarz", "Graok", "Grafen","Glass", "VtoipBar", "CopperWires", "IronPlate", "Unknown"/*"SiliconBased"*/,
                                                   "VtoipPlate", "Unknown"/*"OpticalFiber"*/, "Unknown"/*"Plastic"*/,"Unknown", "Screw", "Antenna", "Pipe", "Body", "Tank", "Screen", "Chip",
                                                   "Unknown"/*"DroneBody"*/, "Wires", "Nozzle","Unknown" /*"SetOfSensors"*/, "CPU", "Battery", "Turbine", "Pump", "SolarPanel",
-                                                  "SatelliteDish", "Transponder", "Cowl", "Skin", "Computer", "CellPhone", "Unknown"/*"Scanner"*/, "LSS", "ResidentialModule",
-                                                  "RocketBooster", "OnBoardComputer", "ElecticMotor", "Unknown"/*"Gyroscope"*/, "Unknown"/*"DroneBrain"*/, "Server", "Unknown"/*"Drone"*/, "FlyingCar",
+                                                  "SatelliteDish", "Transponder", "Cowl", "Skin", "Computer", "Cellphone", "Unknown"/*"Scanner"*/, "LSS", "ResidentialModule",
+                                                  "RocketBooster", "OnBoardComputer", "ElectricMotor", "Unknown"/*"Gyroscope"*/, "Unknown"/*"DroneBrain"*/, "Server", "Unknown"/*"Drone"*/, "FlyingCar",
                                                   "Unknown"/*"Tricoder"*/, "Satellite","Unknown"/*"Rover"*/,"ThirdRStage","SecondRStage","FirstRStage","Rocket","Unknown"/*"IS"*/,"Unknown"/*"StationModule"*/,"Badlock"};//
-    public string[] ResObjectsNames = new string[] { "Iron", "Copper", "Quarz", "Graok", "Grafen", "VtoipBar", "CopperWires", "IronPlate", "SiliconBased",
+    public string[] ResObjectsNames = new string[] { "Iron", "Copper", "Quarz", "Graok", "Grafen","Glass", "VtoipBar", "CopperWires", "IronPlate", "SiliconBased",
                                                   "VtoipPlate", "OpticalFiber", "Plastic","Unknown", "Screw", "Antenna", "Pipe", "Body", "Tank", "Screen", "Chip",
                                                   "DroneBody", "Wires", "Nozzle", "SetOfSensors", "CPU", "Battery", "Turbine", "Pump", "SolarPanel",
-                                                  "SatelliteDish", "Transponder", "Cowl", "Skin", "Computer", "CellPhone", "Scanner", "LSS", "ResidentialModule",
-                                                  "RocketBooster", "OnBoardComputer", "ElecticMotor", "Gyroscope", "DroneBrain", "Server", "Drone", "FlyingCar",
+                                                  "SatelliteDish", "Transponder", "Cowl", "Skin", "Computer", "Cellphone", "Scanner", "LSS", "ResidentialModule",
+                                                  "RocketBooster", "OnBoardComputer", "ElectricMotor", "Gyroscope", "DroneBrain", "Server", "Drone", "FlyingCar",
                                                   "Tricoder", "Satellite","Rover","ThirdRStage","SecondRStage","FirstRStage","Rocket","IS","StationModule","Badlock"};//55 position = Badlock
     public GameObject ImgBtn;
     static int StageNr = 5;
@@ -24,6 +24,7 @@ public class StockScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Object was created");
         switch (StageNr) {
             case 1:
                 finishResNumber = 14;
@@ -56,8 +57,8 @@ public class StockScript : MonoBehaviour
             }
         }
         while(x < ResPicsNames.Length - 1) {
-            ImgBtn = GameObject.Find(ResPicsNames[x]);
-            ImgBtn.GetComponent<Image>().sprite = Resources.Load<Sprite>("Tablets/" + ResPicsNames[55]);
+            ImgBtn = GameObject.Find(ResObjectsNames[x]);
+            ImgBtn.GetComponent<Image>().sprite = Resources.Load<Sprite>("Tablets/" + ResPicsNames[56]);
             x++;
         }
     }
